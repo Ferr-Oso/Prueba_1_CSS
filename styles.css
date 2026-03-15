@@ -82,3 +82,31 @@ a:active {
     transform: translateY(4px);
     border-bottom: none;
 }
+
+.ficha-tecnica {
+    color: #444; 
+    font-family: "Verdana", sans-serif; 
+    line-height: 1.6; 
+    text-align: left; 
+    
+    width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    border-left: 10px solid #fb1616
+    background-color: #f9f9f9;
+}
+
+
+.ficha-tecnica h3 {
+
+    color: inherit; 
+    text-transform: uppercase;
+    border-bottom: 2px solid #00298a;
+    margin-bottom: 15px;
+}
+
+
+.ficha-tecnica p {
+    font-style: italic;
+
+}
