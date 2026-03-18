@@ -111,7 +111,7 @@ a:active {
     font-style: italic;
 }
 
-/* --- NAVBAR (FLEXBOX ALINEACIÓN) --- */
+/* --- NAVBAR --- */
 .navbar {
     display: flex;
     justify-content: space-between; 
@@ -164,7 +164,7 @@ a:active {
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-/* --- TESTIMONIOS (ALINEACIÓN) --- */
+/* --- TESTIMONIOS --- */
 .seccion-testimonios {
     padding: 50px 20px;
     background-color: #f0f0f0;
@@ -203,4 +203,69 @@ a:active {
 .contenido-testimonio h4 {
     color: #fb1616;
     font-size: 1rem;
+}
+
+/* --- ESTILOS DEL FOOTER --- */
+.main-footer {
+    background-color: #001a5a; 
+    color: white;
+    padding: 30px 20px;
+    margin-top: 50px;
+}
+.footer-content {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 15px;
+}
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    display: inline;
+    padding: 5px 10px;
+    background: #fb1616;
+    font-size: 0.8rem;
+    margin: 0;
+}
+.debug-info {
+    font-size: 0.7rem;
+    opacity: 0.6;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    .contenedor-fotos, .ficha-tecnica, .flex-container {
+        width: 95%; 
+    }
+    .footer-content {
+        flex-direction: row; 
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column; 
+        gap: 10px;
+    }
+    .nav-links {
+        gap: 5px;
+    }
+    .nav-links a {
+        padding: 5px 8px;
+        font-size: 0.8rem;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+    .contenedor-fotos img {
+        flex: 1 1 100%; 
+        max-width: 100%;
+    }
 }
